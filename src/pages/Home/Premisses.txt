@@ -1,0 +1,23 @@
+Area para vincular matricula a 
+
+
+
+Login com Matricula e senha
+---------------------------
+
+Tecnico só vai enxergar as Obras/Projetos que tenha seu nome vinculado
+
+
+Lançamento dos Materiais
+------------------------
+Executor (Login)
+Material
+Qtde Prevista
+Qtde Utilizada
+
+não pode alterar a quantidade prevista, só irá realizar o lançamento dos materiais que foram utilizados.
+
+Mais de um técnico pode lançar materiais para a mesma obra
+
+
+FlatList

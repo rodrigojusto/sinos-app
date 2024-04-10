@@ -24,11 +24,8 @@ export default function Project(){
                 />
             </View>
 
-            <TouchableOpacity style={styles.button} onPress={ ()=> navigation.navigate('Project')}>
-                <Text style={styles.buttonText}>Lançamento de Material Obra</Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={ ()=> navigation.navigate('Maintenance')}>
-                <Text style={styles.buttonText}>Lançamento de Material Manutenção</Text>
+                <Text style={styles.buttonText}>Adicionar Material</Text>
             </TouchableOpacity>
         </View>
     )

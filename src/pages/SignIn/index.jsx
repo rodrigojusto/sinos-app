@@ -29,14 +29,20 @@ export default function SignIn(){
 
     return(
         <View style={styles.container}>
+            <Animatable.Image
+                animation="fadeInUp"
+                source={require('../../assets/Logo-Dark.png')}
+                style={{ width: '60%', height: '20%', alignSelf: 'center', }}
+                resizeMode="contain"
+                />
             <Animatable.View animation="fadeInDown" delay={500} style={styles.containerHeader}>
                 <Text style={styles.message}>Login</Text>    
             </Animatable.View>
 
             <Animatable.View animation="fadeInUp" delay={700} style={styles.containerForm}>
-                <Text style={styles.title}>Email</Text>
+                <Text style={styles.title}>Matricula</Text>
                 <TextInput
-                placeholder="Digite o email"
+                placeholder="Digite sua matrícula"
                 style={styles.input}
                 onChangeText={text=>setUser(text)}
                 />
@@ -49,7 +55,7 @@ export default function SignIn(){
                 secureTextEntry={true}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={ ()=> sendForm()}>
+                <TouchableOpacity style={styles.button} onPress={ ()=> navigation.navigate('Home')}>
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>
 
@@ -62,8 +68,6 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor: '#38a69d',
-        
-
     },
     containerHeader:{
         marginTop:'14%',
@@ -85,7 +89,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 25,
         paddingStart: '5%',
         paddingEnd: '5%',
-        top:'20%',
+        top:'10%',
         bottom: '30%',
     },
     title:{
@@ -106,7 +110,6 @@ const styles = StyleSheet.create({
         marginTop: 14,
         justifyContent: 'center',
         alignItems: 'center',
-
     },
     buttonText:{
         color: '#fff',
